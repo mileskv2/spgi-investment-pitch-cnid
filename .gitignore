@@ -1,0 +1,15 @@
+# System and Python clutter
+.DS_Store
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+
+# Working Excel models stay local unless deliberately added (they may contain licensed inputs)
+*.xlsx
+*.xls
+
+# PDFs stay local by default; the final pitch PDF goes in output/ and is added with git add -f
+*.pdf
+
+# Office lock files
+~$*
