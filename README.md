@@ -1,28 +1,27 @@
 # S&P Global (SPGI): my CNID Investment Challenge 2026 pitch
 
-> Outline for me to write. Each section has a target length, what goes in it, and where the material is. Delete the notes as I write. Voice material: `Workflow/handoffs/2026-11-16_github-writeup/voice_bank.md` (not in the repo).
+> Outline for me to write. "The pitch" is drafted from my pitch script; the other sections still hold notes to delete as I write. Voice material: `Workflow/handoffs/2026-11-16_github-writeup/voice_bank.md` (not in the repo).
 
-**Buy · $540 target · Nov 2026** · [Deck (PDF)](deck/SPGI_CNID_deck_Miles.pdf) · [Model](model/SPGI_Valuation_Model_v3.xlsx)
+[Deck (PDF)](deck/SPGI_CNID_deck_Miles.pdf) · [Valuation model](model/SPGI_Valuation_Model_v3.xlsx) · [Investment philosophy](philosophy.md)
 
 ## The pitch
-*~5 lines, said the way I'd say it out loud.*
-- Toll booth on global GDP; on every quality investor's radar
-- Buy, $540: 15.4% above the Nov 6 close of $467.80, plus the dividend
-- Three reasons: benchmark moat; the debt maturity wall + AI borrowing; the Capital IQ review
-- Asymmetric return: ~7%/yr at a depressed 20x, 13.5% on Street numbers, ~19% if the P/E returns to its 27x average
-- Chart: return grid (deck slides 14–15)
 
-![Recommendation](output/figures/02_recommendation.png)
+S&P Global owns the benchmarks that credit, equity and commodity markets rely on: S&P Ratings, the S&P 500 and Platts. It's a toll booth on global GDP, and it's on every quality investor's radar.
+
+I recommend a Buy with a 12-month target of $540, about 15% above the Nov 6, 2026 close of $467.80, plus the dividend. There are three reasons:
+
+1. A world-class moat in benchmarks. Ratings, Indices and Platts are some of the hardest businesses in the world to disrupt, and they grow with the global economy.
+2. A multi-year debt issuance cycle. About $11 trillion of rated debt matures by 2030, and the AI spenders keep borrowing to fund their capex.
+3. The Capital IQ review. S&P is reviewing a sale or separation of Capital IQ, about 6% of revenue. Sell it or keep it, both work, and a sale leaves a business that is almost all benchmarks.
+
+The return is asymmetric: about 13.5% a year on Street numbers, still about 7% if the P/E falls to a depressed 20x, and about 19% if the catalysts land and the P/E returns to its 27x 10-year average (deck slides 14–15).
 
 ## How S&P makes money
-*~6 lines + 1 chart.*
+*~6 lines.*
 - Ratings, Indices (S&P 500), Platts (Energy), Market Intelligence: one line each on who pays and why
 - 9M 2026: $11.1B revenue, +9.5%, 53.6% adj. margin; benchmark segments earn 48–72%
 - 2026 changes: Mobility spun off (MBGL), Capital IQ under review (~6% of revenue)
-- Chart: revenue mix / segment margins (deck slides 3, 21)
-
-![Business overview](output/figures/03_business_overview.png)
-![Segments, 9M 2026](output/figures/21_segments_9m2026.png)
+- Exhibit: deck slides 3 and 21 (revenue mix, segment margins)
 
 ## The qualitative case
 *Three short subsections, ~4 lines each.*
@@ -30,31 +29,18 @@
 - **Moat and quality:** issuers pay because investors require the rating; ~66¢ of profit per extra revenue dollar. Link to [`philosophy.md`](philosophy.md)
 - **AI exposure:** MI is ~23% of profit; the SaaS sell-off de-rated the whole company; sell or keep Capital IQ, both work
 
-![Ratings market structure](output/figures/04_ratings_market_structure.png)
-![Indices fees](output/figures/05_indices_fees.png)
-
 ## The quantitative case
-*~6 lines + 2–3 charts. Every number cites a slide or `src/`.*
+*~6 lines. Every number cites a deck slide or `src/`.*
 - Catalysts: ~$11T of rated debt maturing by 2030; AI spenders issued $302B of bonds in 2026; private credit at $4.1T
 - EPS bridge: ~7 pts revenue, 2 margins, 3 buybacks → ~12% EPS growth (13% with the dividend)
 - Valuation: EPS +~30% in five years while the P/E fell 34x → 24x; 26x 2026 EPS, ~17% below Moody's and MSCI
 - Reverse DCF: what the price implies vs what I expect (`src/reverse_dcf.py`)
-- Charts: P/E vs EPS history, maturity wall, P/E vs ROIC scatter
-
-![Maturity wall and AI borrowing](output/figures/09_maturity_wall_ai_borrowing.png)
-![Private credit](output/figures/10_private_credit.png)
-![EPS growth bridge](output/figures/11_eps_growth_bridge.png)
-![Share price and P/E](output/figures/12_price_and_pe_history.png)
-![Valuation vs peers](output/figures/13_valuation_vs_peers.png)
-![Return potential](output/figures/14_return_potential.png)
-![Returns at 20x](output/figures/15_returns_at_20x.png)
+- Exhibits: deck slides 9–15 (maturity wall, private credit, EPS bridge, P/E history, peers, returns)
 
 ## Risks and what would prove me wrong
 *Table, 5 rows: risk · why it matters · what I watch.*
 - Multiple compression to 20x; issuance slowing in 2027 / AI bubble; buybacks fall after 2027 (one-off cash); bad M&A (IHS Markit: $27.6B goodwill); index fee pressure
 - One line on the downside: at 20x the return is still positive
-
-![Risks](output/figures/16_risks.png)
 
 ## What changed along the way
 *4–5 bullets, each a date + what moved.*
@@ -98,7 +84,6 @@ python src/reverse_dcf.py      # implied FCF growth + sensitivity
 | `philosophy.md` | How I invest, applied to SPGI |
 | `src/`, `notebooks/` | Data fetch, reverse DCF, scenarios, walkthrough |
 | `data/` | Public SEC data pulled by the scripts |
-| `output/figures/` | Exhibit slides from the deck, used above |
 | `ai_workflow/` | AI workflow design, stress tests, decision log |
 
 ## Note on sources

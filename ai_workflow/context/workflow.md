@@ -9,7 +9,7 @@ Each kind of content has one home, so nothing gets lost in chat.
 | Q3 changes | `q3_update_checklist.md` | Work through it before rewriting prose. |
 | Argument and story | `thesis.md` | One heading = one slide. |
 | Decisions | `decision-log.md` | Every stress test and correction: what changed and why. |
-| Numbers | `../Analysis/SPGI_Valuation_Model_v2.xlsx` | Thesis and deck quote the model. They never compute their own numbers. |
+| Numbers | `../../model/SPGI_Valuation_Model_v3.xlsx` | Thesis and deck quote the model. They never compute their own numbers. |
 | Deck | `deck/` (later) | Built from `thesis.md` once the numbers are locked. |
 
 ## Stages

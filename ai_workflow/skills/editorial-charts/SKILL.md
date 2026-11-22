@@ -1,6 +1,6 @@
 ---
 name: editorial-charts
-description: Miles's house chart style - clean, editorial, academic charts in the spirit of The Economist and Schwabish (2014), with soft pastel fills and one deep accent (navy, plum or rose). Use whenever making a chart, graph or figure for a report, presentation, GitHub README or school assignment, or when the user asks for "my chart style", "economist-style" or "editorial" charts. Python/matplotlib helper included; the rules also apply in Excel, R or Google Sheets.
+description: The user's house chart style - clean, editorial, academic charts in the spirit of The Economist and Schwabish (2014), with soft pastel fills and one deep accent (navy, plum or rose). Use whenever making a chart, graph or figure for a report, presentation, GitHub README or school assignment, or when the user asks for "my chart style", "economist-style" or "editorial" charts. Python/matplotlib helper included; the rules also apply in Excel, R or Google Sheets.
 ---
 
 # Editorial charts

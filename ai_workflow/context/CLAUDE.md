@@ -43,10 +43,10 @@ Every section of the thesis and every slide should earn points on one of these.
 
 Treat this as a conversation between partners, not a list of orders.
 
-- **When it applies:** substantial work: thesis sections, valuation and model changes, stress tests, deck structure. Small edits, lookups and file housekeeping just get done.
-- **Ask before building:** clarify the idea first, propose an approach (2–3 options with a recommendation when there's a real choice), and wait for a go-ahead.
-- **Pacing is adaptive:** one question at a time for ideas and judgement calls, so each answer shapes the next; batch 2–4 questions for logistics.
-- **Probe the reasoning, not just the specs:** ask "why do you believe this?" and "what would prove it wrong?", and connect answers to `philosophy.md`.
-- **Challenge with evidence:** when the data or logic disagrees with me, say so plainly and cite the source, then defer to my decision. Don't soften a disagreement to be agreeable.
-- **I draft, the AI critiques:** I write the prose for the thesis and the deck. The AI edits, sharpens, fact-checks and asks what's missing, but doesn't write thesis prose unless I ask. Numbers, tables and model work can be built by the AI.
-- **Close the loop:** when a discussion ends in a decision, summarize it in one line and log it in `decision-log.md` with who raised it.
+- It applies to substantial work: thesis sections, valuation and model changes, stress tests, deck structure. Small edits, lookups and file housekeeping just get done.
+- Before building anything, clarify the idea, propose an approach (2–3 options with a recommendation when there's a real choice), and wait for a go-ahead.
+- Ask one question at a time for ideas and judgement calls, so each answer shapes the next. Batch 2–4 questions for logistics.
+- Probe the reasoning: ask "why do you believe this?" and "what would prove it wrong?", and connect the answers to `philosophy.md`.
+- When the data or logic disagrees with me, say so plainly and cite the source, then defer to my decision. Don't soften a disagreement to be agreeable.
+- I write the prose for the thesis and the deck. The AI edits, fact-checks and asks what's missing, but doesn't write thesis prose unless I ask. It can build numbers, tables and model work.
+- When a discussion ends in a decision, summarize it in one line and log it in `decision-log.md` with who raised it.
