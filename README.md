@@ -15,25 +15,37 @@ I recommend a Buy with a 12-month target of $540, about 15% above the Nov 6, 202
 The return is asymmetric: about 13.5% a year implied on consensus Street numbers, still about 7% if the P/E falls to a near 10-yr-low 20x, and about 19% if a few catalysts play out and the P/E returns to its 27x 10-year average (deck slides 14–15).
 
 ## How S&P makes money
-*~6 lines.*
-- Ratings, Indices (S&P 500), Platts (Energy), Market Intelligence: one line each on who pays and why
-- 9M 2026: $11.1B revenue, +9.5%, 53.6% adj. margin; benchmark segments earn 48–72%
-- 2026 changes: Mobility spun off (MBGL), Capital IQ under review (~6% of revenue)
-- Exhibit: deck slides 3 and 21 (revenue mix, segment margins)
+
+S&P Global has four businesses. Three are benchmarks that markets can't easily replace, and they earn most of the profit.
+
+| Segment | Who pays, and why | 9M 2026 revenue | Adj. margin | Profit share* |
+|---|---|---|---|---|
+| Ratings | Debt issuers, because investors require a rating | $3.9B | 67% | 46% |
+| Indices | Fund providers: when people buy an S&P ETF, S&P gets part of the fee | $1.6B | 72% | 15% |
+| Energy (Platts) | Producers and traders, for the prices oil, gas and power contracts settle on | $2.0B | 48% | 17% |
+| Market Intelligence | Banks and investors, for data and software seats (Capital IQ) | $3.7B | 35% | 23% |
+
+*Net of CME's 27% stake in S&P Dow Jones Indices. Source: Q3 2026 results, deck slide 21.
+
+Revenue through nine months of 2026 was $11.1B, up 9.5%, at a 53.6% adjusted margin. In 2026, S&P spun off Mobility (now MBGL) and began reviewing a sale or separation of Capital IQ, about 6% of revenue.
 
 ## The qualitative case
-*Three short subsections, ~4 lines each.*
-- **Industry:** three agencies hold 93% of ratings and S&P is the largest; index fee rate fell 4.1 → 2.5 bp but asset-linked fees doubled since 2019
-- **Moat and quality:** issuers pay because investors require the rating; ~66¢ of profit per extra revenue dollar. Link to [`philosophy.md`](philosophy.md)
-- **AI exposure:** MI is ~23% of profit; the SaaS sell-off de-rated the whole company; sell or keep Capital IQ, both work
+
+**Industry.** Ratings is close to a three-player market. S&P, Moody's and Fitch hold 93% of ratings outstanding, and S&P is the largest at 49.6% (SEC, 2024). In Indices, the fee per dollar of ETF assets fell from 4.1 to 2.5 bp between 2019 and 2025, but asset-linked fees still doubled because indexed assets grew faster.
+
+**Moat.** Issuers pay for a rating because investors won't buy unrated debt. When people buy an S&P 500 ETF, S&P gets part of the fee. Oil, gas and power contracts settle on Platts prices. Costs are mostly fixed, so in 9M 2026 S&P kept about 66 cents of every extra revenue dollar as profit. How I judge moats is in [`philosophy.md`](philosophy.md).
+
+**AI exposure.** The AI risk sits in Market Intelligence: software and data seats, about 23% of profit. The 2026 SaaS sell-off de-rated the whole company anyway. If S&P sells Capital IQ, what's left is mostly benchmarks. If it keeps it, MI is still growing 7% with margins rising. Sell it or keep it, both work.
 
 ## The quantitative case
-*~6 lines. Every number cites a deck slide or `src/`.*
-- Catalysts: ~$11T of rated debt maturing by 2030; AI spenders issued $302B of bonds in 2026; private credit at $4.1T
-- EPS bridge: ~7 pts revenue, 2 margins, 3 buybacks → ~12% EPS growth (13% with the dividend)
-- Valuation: EPS +~30% in five years while the P/E fell 34x → 24x; 26x 2026 EPS, ~17% below Moody's and MSCI
-- Reverse DCF: what the price implies vs what I expect (`src/reverse_dcf.py`)
-- Exhibits: deck slides 9–15 (maturity wall, private credit, EPS bridge, P/E history, peers, returns)
+
+**Catalysts.** About $11T of rated debt matures by the end of 2030. Six AI spenders have issued $302B of bonds in 2026, up from $114B in 2025, and the five largest are expected to spend $1.1T on capex in 2027. Private credit reached $4.1T, and S&P's private-markets ratings revenue grew 60% in Q2 (deck slides 9–10).
+
+**Growth.** On Street numbers, EPS grows 12.2% a year to 2029: 7.1 points from revenue, 1.7 from margins and 3.4 from buybacks. That's 13.0% with the dividend, and about 14% with my catalysts (slide 11).
+
+**Valuation.** Adjusted EPS grew about 30% in five years while the P/E fell from 34x to 24x. SPGI trades at 26x 2026 earnings, about 17% below Moody's and MSCI, and at 24.1x next-12-month earnings vs a 27.0x 10-year average. Its return on capital looks low (13%) because of the IHS Markit goodwill, not because the business got worse (slides 12–13).
+
+**Returns.** The $540 target is 24x next-12-month EPS of $22.35. Over three years that's about 13.5% a year at 24x on Street EPS, 7.0% at 20x, and 19.0% at 27x with the catalysts (slides 14–15). The reverse DCF in [`src/`](src/) shows what growth today's price implies.
 
 ## Risks and what would prove me wrong
 *Table, 5 rows: risk · why it matters · what I watch.*
