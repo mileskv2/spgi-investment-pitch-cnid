@@ -56,9 +56,9 @@ Revenue through nine months of 2026 was $11.1B, up 9.5%, at a 53.6% adjusted mar
 | Capital return falls after 2027 | 2026 buybacks were 141% of adjusted FCF, helped by one-off cash from the Mobility spin | The framework is ~85% of FCF, and leverage is 2.4x, inside the 2.0–2.5x target |
 | Bad M&A or a poor Capital IQ sale | IHS Markit cost 28x EBITDA and left $27.6B of goodwill | Recent deals are small (With Intelligence, $1.8B). The value is in the re-rating of what's left, not the sale price |
 
-Source: deck slides 16, 20 and 22.
+Source: deck slides 16, 20 and 22. 
 
-## What changed since Round 1
+## What changed from Round 1 to Round 2
 
 When I submitted Round 1 on Sept 30, the stock was $394.47 at 20.9x next-12-month earnings and my target was $500. By Nov 6 it was $467.80 at 24.1x, so the margin of safety was smaller.
 
