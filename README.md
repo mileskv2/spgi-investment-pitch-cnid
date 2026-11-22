@@ -1,20 +1,18 @@
 # S&P Global (SPGI): my CNID Investment Challenge 2026 pitch
 
-> Outline for me to write. "The pitch" is drafted from my pitch script; the other sections still hold notes to delete as I write. Voice material: `Workflow/handoffs/2026-11-16_github-writeup/voice_bank.md` (not in the repo).
-
 [Deck (PDF)](deck/SPGI_CNID_deck_Miles.pdf) · [Valuation model](model/SPGI_Valuation_Model_v3.xlsx) · [Investment philosophy](philosophy.md)
 
-## The pitch
+## Pitch
 
-S&P Global owns the benchmarks that credit, equity and commodity markets rely on: S&P Ratings, the S&P 500 and Platts. It's a toll booth on global GDP, and it's on every quality investor's radar.
+S&P Global owns the benchmarks that credit, equity and commodity markets rely on: S&P Ratings, the S&P 500 and Platts. It's a toll booth on global GDP, and it's a company likely on every quality investor's radar.
 
-I recommend a Buy with a 12-month target of $540, about 15% above the Nov 6, 2026 close of $467.80, plus the dividend. There are three reasons:
+I recommend a Buy with a 12-month target of $540, about 15% above the Nov 6, 2026 close of $467.80, plus the dividend. Three major reasons:
 
 1. A world-class moat in benchmarks. Ratings, Indices and Platts are some of the hardest businesses in the world to disrupt, and they grow with the global economy.
 2. A multi-year debt issuance cycle. About $11 trillion of rated debt matures by 2030, and the AI spenders keep borrowing to fund their capex.
-3. The Capital IQ review. S&P is reviewing a sale or separation of Capital IQ, about 6% of revenue. Sell it or keep it, both work, and a sale leaves a business that is almost all benchmarks.
+3. The Capital IQ review. S&P is reviewing a sale or separation of Capital IQ, about 6% of revenue. This provides optionality to management where in both cases S&P Global can benefit. A sale leaves a business that is nearly all benchmarks (higher quality).
 
-The return is asymmetric: about 13.5% a year on Street numbers, still about 7% if the P/E falls to a depressed 20x, and about 19% if the catalysts land and the P/E returns to its 27x 10-year average (deck slides 14–15).
+The return is asymmetric: about 13.5% a year implied on consensus Street numbers, still about 7% if the P/E falls to a near 10-yr-low 20x, and about 19% if a few catalysts play out and the P/E returns to its 27x 10-year average (deck slides 14–15).
 
 ## How S&P makes money
 *~6 lines.*
