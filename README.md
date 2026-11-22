@@ -47,18 +47,27 @@ Revenue through nine months of 2026 was $11.1B, up 9.5%, at a 53.6% adjusted mar
 
 **Returns.** The $540 target is 24x next-12-month EPS of $22.35. Over three years that's about 13.5% a year at 24x on Street EPS, 7.0% at 20x, and 19.0% at 27x with the catalysts (slides 14–15). The reverse DCF in [`src/`](src/) shows what growth today's price implies.
 
-## Risks and what would prove me wrong
-*Table, 5 rows: risk · why it matters · what I watch.*
-- Multiple compression to 20x; issuance slowing in 2027 / AI bubble; buybacks fall after 2027 (one-off cash); bad M&A (IHS Markit: $27.6B goodwill); index fee pressure
-- One line on the downside: at 20x the return is still positive
+## Risks
 
-## What changed along the way
-*4–5 bullets, each a date + what moved.*
-- Round 1 (Sept 30): $500 target with the stock under $400
-- After Q3: the stock re-rated to ~$467; I retired the "market prices only ~6% growth" claim
-- Nov 1: still a Buy, but not my top pick; reframed as an asymmetric return
-- The checker agent caught a mismatch between bases in my reverse DCF (CME's 27% stake)
-- Link: [`ai_workflow/decision-log.md`](ai_workflow/decision-log.md)
+| Risk | Why it matters | Mitigant |
+|---|---|---|
+| Paying too much | 24.1x next-12-month earnings, and the P/E has fallen before | Already below its 27.0x 10-year average. At 20x the return is still about 7% a year |
+| A downturn hits all three benchmarks | Issuance, ETF assets and the multiple fall together. Transaction revenue fell 45% in 2022 | Non-transaction revenue, about half of Ratings, fell only 2% that year. Maturing debt still has to be refinanced |
+| Capital return falls after 2027 | 2026 buybacks were 141% of adjusted FCF, helped by one-off cash from the Mobility spin | The framework is ~85% of FCF, and leverage is 2.4x, inside the 2.0–2.5x target |
+| Bad M&A or a poor Capital IQ sale | IHS Markit cost 28x EBITDA and left $27.6B of goodwill | Recent deals are small (With Intelligence, $1.8B). The value is in the re-rating of what's left, not the sale price |
+
+Source: deck slides 16, 20 and 22.
+
+## What changed since Round 1
+
+When I submitted Round 1 on Sept 30, the stock was $394.47 at 20.9x next-12-month earnings and my target was $500. By Nov 6 it was $467.80 at 24.1x, so the margin of safety was smaller.
+
+- **Oct 27, Q3 results.** Guidance went up to $17.70–17.95 of adjusted EPS, and S&P formally announced the Capital IQ review.
+- **Nov 1, re-ran the reverse DCF.** The price now implied about the growth management guides to, so I dropped my claim that the market priced in only ~6% growth. Still a Buy, but not my top pick.
+- **Nov 2, the checker caught my own error.** My Round 1 reverse DCF mixed bases on CME's 27% stake in Indices, which understated the growth the price implied.
+- **Nov 9–11, reframed around the return.** My mentor pushed me to show in numbers where I differ from consensus. I built the base case on Street EPS, moved the target to $540 (24x next-12-month EPS), and pitched an asymmetric return instead of a mispricing.
+
+Full record: [`ai_workflow/decision-log.md`](ai_workflow/decision-log.md).
 
 ## How I built it
 *~8 lines + an optional workflow diagram.*
