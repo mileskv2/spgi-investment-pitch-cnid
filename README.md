@@ -64,19 +64,23 @@ When I submitted Round 1 on Sept 30, the stock was $394.47 at 20.9x next-12-mont
 
 - **Oct 27, Q3 results.** Guidance went up to $17.70–17.95 of adjusted EPS, and S&P formally announced the Capital IQ review.
 - **Nov 1, re-ran the reverse DCF.** The price now implied about the growth management guides to, so I dropped my claim that the market priced in only ~6% growth. Still a Buy, but not my top pick.
-- **Nov 2, the checker caught my own error.** My Round 1 reverse DCF mixed bases on CME's 27% stake in Indices, which understated the growth the price implied.
+- **Nov 2, the checker caught my own error.** My Round 1 reverse DCF mixed bases on CME's 27% stake in Indices. On a consistent basis, the price implies about 8.4% a year of FCF growth for 10 years, not 6%.
 - **Nov 9–11, reframed around the return.** My mentor pushed me to show in numbers where I differ from consensus. I built the base case on Street EPS, moved the target to $540 (24x next-12-month EPS), and pitched an asymmetric return instead of a mispricing.
 
 Full record: [`ai_workflow/decision-log.md`](ai_workflow/decision-log.md).
 
 ## How I built it
-*~8 lines + an optional workflow diagram.*
-- Ideas: iPhone voice-to-text memos, sometimes sent from my phone over Claude Code Remote Control, filed as raw transcript + sorted notes
-- Editing: Obsidian on the project's .md files, alongside the agents
-- AI setup: one orchestrator + four agents (researcher, modeler, checker, challenger); I made every assumption call; a number was final only after an independent checker PASS
-- Deck: v1 → v3 → submitted, two timed rehearsals, the 18-slide main deck
-- What I'd do differently: one line
-- Tools (one line each):
+
+I built this between Q3 results on Oct 27 and pitch day on Nov 13, with Claude Code as a research partner. I made every assumption call; the AI did the legwork and checked the numbers.
+
+- **Capturing ideas.** I thought out loud in iPhone voice memos, sometimes sent from my phone over Claude Code Remote Control. Each one was filed as a raw transcript plus sorted notes.
+- **Writing.** I edited the thesis, notes and decision log in Obsidian, working in the same Markdown files as the agents.
+- **Agents.** One main session handed tasks to four agents: a researcher for filings and data, a modeler for the math, a checker and a challenger for the bear case. The checker re-derived each number from the sources without seeing the modeler's work, and no number went in the deck until it passed.
+- **Deck and delivery.** I recorded two timed rehearsals and fed the transcripts back in. Each came back sorted by slide, with timings and the slides I struggled to explain flagged, so I knew what to simplify. The first ran 20 minutes against a 15-minute slot, so I cut text and moved detail to the appendix. For Q&A, I practised against 15 likely judge questions with short answers to say out loud.
+
+**What I'd do differently**
+- Decide on the agents and their roles from day one, and spend more time on the structure of the Markdown files they read and write.
+- Build a dashboard, such as a Claude artifact, that updates as the analysis moves, so I could see the model, the thesis and the open questions in one place.
 
 | Tool | What it did | Source |
 |---|---|---|
@@ -85,14 +89,14 @@ Full record: [`ai_workflow/decision-log.md`](ai_workflow/decision-log.md).
 | `financial-analysis`, `equity-research` plugins | Comps, DCF checks, model audits, earnings analysis | Anthropic, Claude for Financial Services |
 | `humanizer` skill | Removing signs of AI writing from drafts | [blader/humanizer](https://github.com/blader/humanizer) (MIT) |
 
-- Link: [`ai_workflow/`](ai_workflow/README.md)
+More on the setup in [`ai_workflow/`](ai_workflow/README.md).
 
 ## Reproduce
 ```bash
 pip install -r requirements.txt
 export SEC_USER_AGENT="Your Name you@example.com"   # required by the SEC
 python src/fetch_filings.py    # SPGI annual financials -> data/spgi_annual.csv
-python src/reverse_dcf.py      # implied FCF growth + sensitivity
+python src/reverse_dcf.py      # FCF growth the Nov 6 price implies, + sensitivity
 ```
 
 ## Repo map
@@ -101,7 +105,7 @@ python src/reverse_dcf.py      # implied FCF growth + sensitivity
 | `deck/` | Final pitch deck (PDF) |
 | `model/` | Valuation model (Excel) |
 | `philosophy.md` | How I invest, applied to SPGI |
-| `src/`, `notebooks/` | Data fetch, reverse DCF, scenarios, walkthrough |
+| `src/` | Data fetch and reverse DCF |
 | `data/` | Public SEC data pulled by the scripts |
 | `ai_workflow/` | AI workflow design, stress tests, decision log |
 

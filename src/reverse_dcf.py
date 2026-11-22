@@ -2,14 +2,22 @@
 
 import argparse
 
-# Round 1 inputs (Sept 30, 2026). Refresh with Q3 numbers before using in the pitch.
-ROUND1 = {
-    "ev_bn": 127.9,          # enterprise value, $bn
-    "fcf_bn": 5.35,          # FY26E adjusted FCF, $bn (before CME's noncontrolling share)
+# Inputs at the Nov 6, 2026 close ($467.80), Q3 2026 data, continuing operations.
+# EV = 289.9M shares x $467.80 + debt $13.062B - cash $2.441B (Q3 2026 exhibits p.8).
+# It values SPGI holders' claim only, so FCF is after distributions to CME's 27% of
+# S&P Dow Jones Indices (Q3 exhibits p.18). FY26E FCF grosses up 9M 2026 by the
+# prior-year Q4 share of FCF, which is approximate (about +/-6%).
+INPUTS = {
+    "ev_bn": 146.236,         # enterprise value, $bn
+    "fcf_bn": 5.1204,         # FY26E adjusted FCF after NCI, $bn (reported: 4.8126)
     "discount_rate": 0.085,
-    "terminal_growth": 0.03,  # not stated in the Round 1 report; 3% reproduces its ~6% result
+    "terminal_growth": 0.03,
     "years": 10,
 }
+
+# Round 1 (Sept 30, 2026), kept for the record. It paired FCF before CME's share
+# with an EV that excludes CME's stake, which understated implied growth (~6.1%).
+ROUND1 = {"ev_bn": 127.9, "fcf_bn": 5.35}
 
 
 def dcf_value(fcf, growth, discount_rate, terminal_growth, years):
@@ -36,7 +44,7 @@ def implied_growth(ev, fcf, discount_rate, terminal_growth, years):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    for key, default in ROUND1.items():
+    for key, default in INPUTS.items():
         parser.add_argument(f"--{key.replace('_', '-')}", type=type(default), default=default)
     args = parser.parse_args()
 
