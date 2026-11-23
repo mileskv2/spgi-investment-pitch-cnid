@@ -8,7 +8,7 @@ I want to own a handful of businesses I'd be comfortable holding for 15 years or
 
 Every moat has to defend against two threats, an idea I took from an interview with Chris Hohn: substitution, where a different product or technology replaces the need, and competition, where a rival does the same thing better or cheaper. The strongest moats handle both and last for decades.
 
-1. **Irreplaceable asset or IP complexity.** No amount of capital or time can replicate it, because the asset is fixed or the know-how took decades to build. It covers both threats, so it's the most durable moat. Examples: ASML's EUV lithography; the S&P 500, part of an index family with $27.7T of assets indexed or benchmarked to it.
+1. **Irreplaceable asset or IP complexity.** No amount of capital or time can replicate it, because the asset is fixed or the know-how took decades to build. It covers both threats, so it's the most durable moat. Examples: ASML's EUV lithography; the S&P 500, flagship of S&P Dow Jones Indices, which has $27.7T of assets indexed or benchmarked to its indices.
 2. **Regulatory or institutional mandate.** The customer has no real choice, because regulation or market convention requires the product. Examples: FICO scores in US consumer lending; credit ratings, which investor mandates and insurance and bank capital rules require in practice.
 3. **Proprietary data that can't be replicated.** Datasets built over decades that a competitor can't rebuild from zero. AI should make that data more valuable, but only the data is protected, not the software seats around it. Examples: S&P's private credit pricing and evaluated bond data; Uber's traffic and ride data.
 4. **Network effects at scale.** Each new participant makes the network more valuable, so a challenger falls further behind over time. The strongest form is two-sided. Examples: Meta's social graph; Mastercard's cardholders and merchants.
@@ -32,7 +32,7 @@ The most durable businesses have more than one moat. ASML has IP complexity and 
 | Pricing power | Ratings earns a 67% margin, and about 77% on each extra dollar of revenue (9M 2026) | Ratings margin and incremental margin |
 | The price already contains a forecast | What growth does today's price require, and what do I expect? | Reverse DCF implied growth vs my estimate |
 | Don't buy quality at any price | Does the base case clear the hurdle with a margin of safety? Does the bear case still earn a positive return? | Base and bear IRR vs hurdle |
-| Return comes from compounding | ~4% of shares retired a year on top of organic growth | FCF/share CAGR, buyback yield |
+| Return comes from compounding | About 3% of shares retired a year on Street numbers (3.2%), on top of organic growth | FCF/share CAGR, buyback yield |
 | Buybacks at or below intrinsic value | Is management buying back stock below what it's worth? | Buyback price vs intrinsic value |
 | Invalidation triggers | MI organic growth below 3% for three quarters; an issuance downturn; Indices fee compression; a serious capital allocation mistake | Checked each quarter |
 

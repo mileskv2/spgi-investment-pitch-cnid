@@ -40,13 +40,13 @@ The stages ran in order: framework from the provided research, Q3 refresh, thesi
 
 - **Oct 30:** flagged that pre-spin Street EPS (~$19.5) can't be compared with post-spin guidance ($17.70–17.95), so every comparison moved to a post-spin basis.
 - **Nov 1:** re-ran the reverse DCF at the post-Q3 price. The "market prices in only ~6% growth" claim was retired.
-- **Nov 2:** the checker found that my Round 1 reverse DCF mixed bases on CME's stake. On a consistent basis, implied growth is about 8.4%, not 6%.
+- **Nov 2:** the checker found that my Round 1 reverse DCF mixed bases on CME's stake. Corrected, implied growth is about 8%, not 6%.
 - **Nov 9–11:** to show in numbers where I differ from consensus, the base case moved onto Street numbers, with my catalysts shown separately.
 
 ## Where the AI was wrong
 
 - Secondary coverage said S&P "plans to spin off" Capital IQ. The 8-K only announced a strategic review that includes a possible separation.
-- The AI said SPGI's P/E discount to Moody's and MSCI had "mostly closed". Peers re-rated too, and a ~15% discount remained.
+- The AI said SPGI's P/E discount to Moody's and MSCI had "mostly closed". Peers re-rated too, and a ~15% discount remained (Oct 30 forward P/E).
 - The AI treated FCF "after CME's payouts" as an adjustment to make. Reported FCF is already after those distributions (Q3 2026 exhibits, p.18).
 - Model agents read stale cached values from the Excel workbook. The checker caught it by re-deriving from the live formulas.
 
