@@ -69,13 +69,31 @@ When I submitted Round 1 on Sept 30, the stock was $394.47 at 20.9x next-12-mont
 - **Oct 27, Q3 results.** Guidance went up to $17.70–17.95 of adjusted EPS, and S&P formally announced the Capital IQ review.
 - **Nov 1, re-ran the reverse DCF.** The price now implied about the growth management guides to, so I dropped my claim that the market priced in only ~6% growth. Still a Buy, but not my top pick.
 - **Nov 2, the checker caught my own error.** My Round 1 reverse DCF mixed bases on CME's 27% stake in Indices. On a consistent basis, the price implies about 8.4% a year of FCF growth for 10 years, not 6%.
-- **Nov 9–11, reframed around the return.** My mentor pushed me to show in numbers where I differ from consensus. I built the base case on Street EPS, moved the target to $540 (24x next-12-month EPS), and pitched an asymmetric return instead of a mispricing.
+- **Nov 9–11, reframed around the return.** To show in numbers where I differ from consensus, I built the base case on Street EPS, moved the target to $540 (24x next-12-month EPS), and pitched an asymmetric return instead of a mispricing.
 
 Full record: [`ai_workflow/decision-log.md`](ai_workflow/decision-log.md).
 
 ## How I built it
 
 I built this between Q3 results on Oct 27 and pitch day on Nov 13, with Claude Code as a research partner. I made every assumption call; the AI did the legwork and checked the numbers.
+
+```mermaid
+flowchart TD
+    A["Ideas: voice memos on my phone,<br/>sent in over Remote Control"] --> B["Notes and thesis in Markdown,<br/>edited in Obsidian"]
+    B --> C{"Main Claude Code session<br/>writes a brief for each task"}
+    C --> R["Researcher<br/>filings and market data"]
+    C --> M["Modeler<br/>reverse DCF, returns"]
+    C --> H["Challenger<br/>argues the bear case"]
+    R --> K["Checker<br/>re-derives every number<br/>without seeing the working"]
+    M --> K
+    K -- "FAIL" --> M
+    K -- "PASS" --> G(["My call on every assumption"])
+    H --> G
+    G --> L["Decision log"]
+    G --> P["Deck"]
+    P --> S["Rehearse out loud, record, transcribe"]
+    S -- "notes by slide: timing, what to cut" --> P
+```
 
 - **Capturing ideas.** I thought out loud in iPhone voice memos, sometimes sent from my phone over Claude Code Remote Control. Each one was filed as a raw transcript plus sorted notes.
 - **Writing.** I edited the thesis, notes and decision log in Obsidian, working in the same Markdown files as the agents.

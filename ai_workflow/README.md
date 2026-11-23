@@ -16,14 +16,32 @@ Without one, numbers drift between chats, sources get mixed up and criticism get
 
 ## The process
 
-Framework from the provided research → Q3 refresh → thesis → stress tests → deck → rehearsals and Q&A. Each stage is in [`context/workflow.md`](context/workflow.md).
+```mermaid
+flowchart TD
+    A["Ideas: voice memos on my phone,<br/>sent in over Remote Control"] --> B["Notes and thesis in Markdown,<br/>edited in Obsidian"]
+    B --> C{"Main Claude Code session<br/>writes a brief for each task"}
+    C --> R["Researcher<br/>filings and market data"]
+    C --> M["Modeler<br/>reverse DCF, returns"]
+    C --> H["Challenger<br/>argues the bear case"]
+    R --> K["Checker<br/>re-derives every number<br/>without seeing the working"]
+    M --> K
+    K -- "FAIL" --> M
+    K -- "PASS" --> G(["My call on every assumption"])
+    H --> G
+    G --> L["Decision log"]
+    G --> P["Deck"]
+    P --> S["Rehearse out loud, record, transcribe"]
+    S -- "notes by slide: timing, what to cut" --> P
+```
+
+The stages ran in order: framework from the provided research, Q3 refresh, thesis, stress tests, deck, then rehearsals and Q&A. The deck went through two timed rehearsals out loud, each recorded and transcribed, with what didn't land cut after each one. Each stage is in [`context/workflow.md`](context/workflow.md).
 
 ## What the AI changed
 
 - **Oct 30:** flagged that pre-spin Street EPS (~$19.5) can't be compared with post-spin guidance ($17.70–17.95), so every comparison moved to a post-spin basis.
 - **Nov 1:** re-ran the reverse DCF at the post-Q3 price. The "market prices in only ~6% growth" claim was retired.
 - **Nov 2:** the checker found that my Round 1 reverse DCF mixed bases on CME's stake. On a consistent basis, implied growth is about 8.4%, not 6%.
-- **Nov 9–11:** after mentor feedback to show where I differ from consensus, the base case moved onto Street numbers, with my catalysts shown separately.
+- **Nov 9–11:** to show in numbers where I differ from consensus, the base case moved onto Street numbers, with my catalysts shown separately.
 
 ## Where the AI was wrong
 
