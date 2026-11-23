@@ -15,7 +15,7 @@ I wanted a partner that could act as both a helper to run models and a debate pa
 
 ```mermaid
 flowchart TD
-    A["Ideas: voice memos on my phone,<br/>sent in over Remote Control"] --> B["Notes and thesis in Markdown,<br/>edited in Obsidian"]
+    A["Ideas: voice memos on my phone,<br/>pasted in, sometimes over Remote Control"] --> B["Notes and thesis in Markdown,<br/>edited in Obsidian"]
     B --> C{"Main Claude Code session<br/>writes a brief for each task"}
     C --> R["Researcher<br/>filings and market data"]
     C --> M["Modeler<br/>reverse DCF, returns"]
@@ -38,9 +38,9 @@ The stages ran in order: framework from the provided research, Q3 refresh, thesi
 - **Oct 30:** flagged that pre-spin Street EPS (~$19.5) can't be compared with post-spin guidance ($17.70–17.95), so every comparison moved to a post-spin basis.
 - **Nov 1:** re-ran the reverse DCF at the post-Q3 price. The "market prices in only ~6% growth" claim was retired.
 - **Nov 2:** the checker found that my Round 1 reverse DCF mixed bases on CME's stake. Corrected, implied growth is about 8%, not 6%.
-- **Nov 9–11:** to show in numbers where I differ from consensus, the base case moved onto Street numbers, with my catalysts shown separately.
+- **Nov 9–11:** the modeler and checker built a bridge from Street EPS to my view, so the base case moved onto Street numbers with my catalysts shown separately.
 
-## Where the AI was wrong
+## Where the AI or its sources were wrong
 
 - Secondary coverage said S&P "plans to spin off" Capital IQ. The 8-K only announced a strategic review that includes a possible separation.
 - The AI said SPGI's P/E discount to Moody's and MSCI had "mostly closed". Peers re-rated too, and a ~15% discount remained (Oct 30 forward P/E).

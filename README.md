@@ -33,7 +33,6 @@ Revenue through nine months of 2026 was $11.1B, up 9.5%, at a 53.6% adjusted mar
 
 **Industry.** Ratings is almost a three-player market, a classic oligopoly. S&P, Moody's and Fitch hold 93% of ratings outstanding, and S&P is the largest at 49.6% (SEC, 2024). In Indices, the fee per dollar of ETF assets fell from roughly 4.1 to 2.5 bp between 2019 and 2025, but asset-linked fees still doubled because indexed assets grew so quickly.
 
-<img src="output/figures/3_moat.png" alt="S&P holds about half of all credit ratings outstanding" width="480">
 
 **Moat.** Issuers pay for a rating because investors won't buy unrated debt. When people buy an S&P 500 ETF, S&P gets part of the fee. Oil, gas and power contracts settle on Platts prices. Costs are mostly fixed, so in 9M 2026 S&P kept about 66 cents of every extra revenue dollar as profit. How I judge moats is outlined in [`philosophy.md`](philosophy.md).
 
@@ -43,7 +42,6 @@ Revenue through nine months of 2026 was $11.1B, up 9.5%, at a 53.6% adjusted mar
 
 **Catalysts.** About $11T of rated debt matures by the end of 2030. Six AI spenders have issued $302B of bonds in 2026, up from $114B in 2025, and the five largest are expected to spend $1.1T on capex in 2027. Private credit reached $4.1T, and S&P's private-markets ratings revenue grew 60% in Q2 (deck slides 9–10).
 
-<img src="output/figures/1_debt_cycle.png" alt="A maturity wall and a wave of AI borrowing" width="480"> <img src="output/figures/2_private_credit.png" alt="Private credit ratings are growing faster than the market" width="480">
 
 **Growth.** On Street numbers, EPS grows 12.2% a year to 2029: 7.1 points from revenue, 1.7 from margins and 3.4 from buybacks. That's 13.0% with the dividend, and about 14% with my catalysts (slide 11).
 
@@ -79,7 +77,7 @@ I built this between the Q3 results on Oct 27 and presentation day on Nov 13, wi
 
 ```mermaid
 flowchart TD
-    A["Ideas: voice memos on my phone,<br/>sent in over Remote Control"] --> B["Notes and thesis in Markdown,<br/>edited in Obsidian"]
+    A["Ideas: voice memos on my phone,<br/>pasted in, sometimes over Remote Control"] --> B["Notes and thesis in Markdown,<br/>edited in Obsidian"]
     B --> C{"Main Claude Code session<br/>writes a brief for each task"}
     C --> R["Researcher<br/>filings and market data"]
     C --> M["Modeler<br/>reverse DCF, returns"]
@@ -129,7 +127,6 @@ python src/reverse_dcf.py      # FCF growth the Nov 6 price implies, + sensitivi
 | `philosophy.md` | How I invest, applied to SPGI |
 | `src/` | Data fetch and reverse DCF |
 | `data/` | Public SEC data pulled by the scripts |
-| `output/figures/` | Charts used in this README |
 | `ai_workflow/` | AI workflow design, stress tests, decision log |
 
 ## Note on sources
