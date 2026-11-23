@@ -23,11 +23,11 @@ flowchart TD
     R --> K["Checker<br/>re-derives every number<br/>without seeing the working"]
     M --> K
     K -- "FAIL" --> M
-    K -- "PASS" --> G(["My call on every assumption"])
+    K -- "PASS" --> G(["My decision"])
     H --> G
     G --> L["Decision log"]
     G --> P["Deck"]
-    P --> S["Rehearse out loud, record, transcribe"]
+    P --> S["Rehearse aloud, record, transcribe"]
     S -- "notes by slide: timing, what to cut" --> P
 ```
 
