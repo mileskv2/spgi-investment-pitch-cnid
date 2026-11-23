@@ -16,7 +16,7 @@ The return is asymmetric: about 13.5% a year implied on consensus Street numbers
 
 ## How S&P makes money
 
-S&P Global has four businesses. Three are benchmarks that markets can't easily replace, and they earn most of the profit.
+S&P Global has four businesses. Three are benchmarks that are extremely difficult for markets to replace or substitute, and they earn most of the business's profit.
 
 | Segment | Who pays, and why | 9M 2026 revenue | Adj. margin | Profit share* |
 |---|---|---|---|---|
@@ -31,13 +31,13 @@ Revenue through nine months of 2026 was $11.1B, up 9.5%, at a 53.6% adjusted mar
 
 ## The qualitative case
 
-**Industry.** Ratings is close to a three-player market. S&P, Moody's and Fitch hold 93% of ratings outstanding, and S&P is the largest at 49.6% (SEC, 2024). In Indices, the fee per dollar of ETF assets fell from roughly 4.1 to 2.5 bp between 2019 and 2025, but asset-linked fees still doubled because indexed assets grew faster.
+**Industry.** Ratings is almost a three-player market, a classic oligopoly. S&P, Moody's and Fitch hold 93% of ratings outstanding, and S&P is the largest at 49.6% (SEC, 2024). In Indices, the fee per dollar of ETF assets fell from roughly 4.1 to 2.5 bp between 2019 and 2025, but asset-linked fees still doubled because indexed assets grew so quickly.
 
 <img src="output/figures/3_moat.png" alt="S&P holds about half of all credit ratings outstanding" width="480">
 
-**Moat.** Issuers pay for a rating because investors won't buy unrated debt. When people buy an S&P 500 ETF, S&P gets part of the fee. Oil, gas and power contracts settle on Platts prices. Costs are mostly fixed, so in 9M 2026 S&P kept about 66 cents of every extra revenue dollar as profit. How I judge moats is in [`philosophy.md`](philosophy.md).
+**Moat.** Issuers pay for a rating because investors won't buy unrated debt. When people buy an S&P 500 ETF, S&P gets part of the fee. Oil, gas and power contracts settle on Platts prices. Costs are mostly fixed, so in 9M 2026 S&P kept about 66 cents of every extra revenue dollar as profit. How I judge moats is outlined in [`philosophy.md`](philosophy.md).
 
-**AI exposure.** The AI risk sits in Market Intelligence: software and data seats, about 23% of profit. The 2026 SaaS sell-off de-rated the whole company anyway. If S&P sells Capital IQ, what's left is mostly benchmarks. If it keeps it, MI is still growing 7% with margins rising. Sell it or keep it, both work.
+**AI exposure.** The AI risk sits in Market Intelligence: software and data seats, about 23% of profit. The 2026 SaaS sell-off de-rated the whole company anyway. If S&P sells Capital IQ, what's left is mostly benchmarks. If it keeps it, MI is still growing 7% with margins rising. Sell it or keep it, both are strong options in my view.
 
 ## The quantitative case
 
@@ -47,7 +47,7 @@ Revenue through nine months of 2026 was $11.1B, up 9.5%, at a 53.6% adjusted mar
 
 **Growth.** On Street numbers, EPS grows 12.2% a year to 2029: 7.1 points from revenue, 1.7 from margins and 3.4 from buybacks. That's 13.0% with the dividend, and about 14% with my catalysts (slide 11).
 
-**Valuation.** Earnings kept growing over the last five years while the P/E fell from 34x to 24x. SPGI trades at 26x 2026 earnings, about 17% below Moody's and MSCI, and at 24.1x next-12-month earnings vs a 27.0x 10-year average. Its return on capital looks low (13%) because of the IHS Markit goodwill, not because the business got worse (slides 12–13).
+**Valuation.** Earnings kept growing over the last five years while the P/E fell from 34x to 24x. SPGI trades at 26x 2026 earnings, about 17% below Moody's and MSCI, and at 24.1x next-12-month earnings vs a 27.0x 10-year average. Its return on capital looks low (13%) because of the IHS Markit goodwill. Overall it is not a stretched valuation, trading below its own averages and below its peers. 
 
 **Returns.** The $540 target is 24x the next-12-month EPS expected a year from now ($22.35), or $536, rounded. Over three years that's about 13.5% a year at 24x on Street EPS, 7.0% at 20x, and 19.0% at 27x with the catalysts (slides 14–15). The reverse DCF in [`src/`](src/) shows what growth today's price implies.
 
@@ -75,7 +75,7 @@ Full record: [`ai_workflow/decision-log.md`](ai_workflow/decision-log.md).
 
 ## How I built it
 
-I built this between Q3 results on Oct 27 and pitch day on Nov 13, with Claude Code as a research partner. I made every assumption call; the AI did the legwork and checked the numbers.
+I built this between the Q3 results on Oct 27 and presentation day on Nov 13, with Claude Code as a research partner. I made every assumption call, gathered all the relevant data from a trusted source (Capital IQ) and my agents did the legwork and checked the numbers.
 
 ```mermaid
 flowchart TD
@@ -98,7 +98,7 @@ flowchart TD
 - **Capturing ideas.** I thought out loud in iPhone voice memos, sometimes sent from my phone over Claude Code Remote Control. Each one was filed as a raw transcript plus sorted notes.
 - **Writing.** I edited the thesis, notes and decision log in Obsidian, working in the same Markdown files as the agents.
 - **Agents.** One main session handed tasks to four agents: a researcher for filings and data, a modeler for the math, a checker and a challenger for the bear case. The checker re-derived each number from the sources without seeing the modeler's work, and no number went in the deck until it passed.
-- **Deck and delivery.** I recorded two timed rehearsals and fed the transcripts back in. Each came back sorted by slide, with timings and the slides I struggled to explain flagged, so I knew what to simplify. The first ran 20 minutes against a 15-minute slot, so I cut text and moved detail to the appendix. For Q&A, I practised short spoken answers to the questions judges were most likely to ask.
+- **Deck and delivery.** I recorded two timed rehearsals and fed the transcripts back in. Each came back sorted by slide, with timings and the slides I struggled to explain flagged, so I knew what to simplify. The first ran 20 minutes against a 15-minute slot, so I cut text and moved detail to the appendix. For Q&A, I practised short spoken answers to the questions judges were most likely to ask. 
 
 **What I'd do differently**
 - Decide on the agents and their roles from day one, and spend more time on the structure of the Markdown files they read and write.
