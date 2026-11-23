@@ -1,6 +1,6 @@
 # AI workflow
 
-I used Claude Code as a research partner through this process. Recommendations and assumptions as well as data, are verified and mine. The AI gathered facts, ran models based on my assumptions, checked numbers and acted as devil's advocate during the process. 
+I used Claude Code as a research partner through this process. The recommendation and assumptions are mine, and I verified the data. The AI gathered facts, ran models based on my assumptions, checked numbers and acted as devil's advocate during the process. 
 I wanted a partner that could act as both a helper to run models and a debate partner to refine my thesis and make sure I knew what I was talking about. It also keeps a record of all changes and decisions along the way. 
 
 ## Design choices

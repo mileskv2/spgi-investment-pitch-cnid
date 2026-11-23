@@ -45,7 +45,7 @@ Revenue through nine months of 2026 was $11.1B, up 9.5%, at a 53.6% adjusted mar
 
 **Growth.** On Street numbers, EPS grows 12.2% a year to 2029: 7.1 points from revenue, 1.7 from margins and 3.4 from buybacks. That's 13.0% with the dividend, and about 14% with my catalysts (slide 11).
 
-**Valuation.** Earnings kept growing over the last five years while the P/E fell from 34x to 24x. SPGI trades at 26x 2026 earnings, about 17% below Moody's and MSCI, and at 24.1x next-12-month earnings vs a 27.0x 10-year average. Its return on capital looks low (13%) because of the IHS Markit goodwill. Overall it is not a stretched valuation, trading below its own averages and below its peers. 
+**Valuation.** Earnings kept growing over the last five years while the P/E fell from 34x to 24x. SPGI trades at 26x 2026 earnings, about 17% below Moody's and MSCI, and at 24.1x next-12-month earnings vs a 27.0x 10-year average. Its return on capital looks low (13%) because of the IHS Markit goodwill. Overall it is not a stretched valuation, trading below its own averages and below its closest peers, Moody's and MSCI. 
 
 **Returns.** The $540 target is 24x the next-12-month EPS expected a year from now ($22.35), or $536, rounded. Over three years that's about 13.5% a year at 24x on Street EPS, 7.0% at 20x, and 19.0% at 27x with the catalysts (slides 14–15). The reverse DCF in [`src/`](src/) shows what growth today's price implies.
 
@@ -73,7 +73,7 @@ Full record: [`ai_workflow/decision-log.md`](ai_workflow/decision-log.md).
 
 ## How I built it
 
-I built this between the Q3 results on Oct 27 and presentation day on Nov 13, with Claude Code as a research partner. I made every assumption call, gathered all the relevant data from a trusted source (Capital IQ) and my agents did the legwork and checked the numbers.
+I built this between the Q3 results on Oct 27 and presentation day on Nov 13, with Claude Code as a research partner. I made every assumption call, gathered the data from company filings and Capital IQ and my agents did the legwork and checked the numbers.
 
 ```mermaid
 flowchart TD
