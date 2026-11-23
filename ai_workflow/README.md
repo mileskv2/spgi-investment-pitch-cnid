@@ -1,18 +1,18 @@
 # AI workflow
 
-I used Claude Code as a research partner through the CNID final round, from Q3 results on Oct 27 to pitch day on Nov 13, 2026. The recommendation and every assumption are mine. The AI gathered facts, ran the math, checked numbers and argued the other side.
+I used Claude Code as a research partner through this process. Recommendations and assumptions as well as data, are verified and mine. The AI gathered facts, ran models based on my assumptions, checked numbers and acted as devil's advocate during the process. 
 
 ## Why give the AI a structure
 
-Without one, numbers drift between chats, sources get mixed up and criticism gets softened. I wanted a sparring partner, with a record of everything it changed.
+Without one, numbers drift between chats, sources get mixed up and criticism gets softened. I wanted a partner that could act as both a helper to run models and a debate partner to refine my thesis and make sure I knew what I was talking about. It also keeps a record of all changes and decisions along the way. 
 
 ## Design choices
 
-- **One context file.** Every session starts from [`context/CLAUDE.md`](context/CLAUDE.md): the scorecard, GAAP vs adjusted, CME's 27% of S&P Dow Jones Indices, and how we work together (the AI asks before building and challenges me with evidence).
-- **My philosophy as the yardstick.** Stress tests are checked against [`../philosophy.md`](../philosophy.md), not generic principles.
-- **One home per kind of content.** Numbers live in the model, the argument in the thesis, decisions in [`decision-log.md`](decision-log.md).
+- **One context file.** Every session starts from [`context/CLAUDE.md`](context/CLAUDE.md): the scorecard, GAAP vs adjusted, CME's 27% of S&P Dow Jones Indices, and how we work together (the AI asks before building and challenges me with evidence etc.)
+- **My philosophy as the yardstick.** Stress tests are checked against [`../philosophy.md`](../philosophy.md), which is my imported and refined philosophy for investing.
+- **One home per kind of content.** Numbers are in the model, the current state of the argument is in the thesis, decisions are in [`decision-log.md`](decision-log.md).
 - **Four agents** ([`agents/`](agents/)): a researcher, a modeler, a checker and a challenger. The checker re-derives each number from the sources without seeing the modeler's work. The challenger runs in its own task, so it isn't defending work it built.
-- **Licensed material stays private.** I had access to provided sell-side research and models. They shaped the framework, but none of it is in this repo.
+- **Licensed material stays private.** I had access to provided sell-side research and models. They shaped the framework and some assumptions, but none of it is in this repo.
 
 ## The process
 
@@ -48,7 +48,7 @@ The stages ran in order: framework from the provided research, Q3 refresh, thesi
 - Secondary coverage said S&P "plans to spin off" Capital IQ. The 8-K only announced a strategic review that includes a possible separation.
 - The AI said SPGI's P/E discount to Moody's and MSCI had "mostly closed". Peers re-rated too, and a ~15% discount remained (Oct 30 forward P/E).
 - The AI treated FCF "after CME's payouts" as an adjustment to make. Reported FCF is already after those distributions (Q3 2026 exhibits, p.18).
-- Model agents read stale cached values from the Excel workbook. The checker caught it by re-deriving from the live formulas.
+- Model agents read stale cached values from the Excel workbook. The checker caught it by re-deriving from live data.
 
 The full record is in [`decision-log.md`](decision-log.md).
 
@@ -56,6 +56,7 @@ The full record is in [`decision-log.md`](decision-log.md).
 
 - The independent checker earned its place: it caught the reverse DCF basis error and the stale workbook values, both of which I'd missed.
 - Next time I'd settle the agents' roles and the structure of their Markdown files on day one, and build a dashboard that shows the model, the thesis and the open questions in one place as the work moves.
+- Another thing I'd do is gather the data from Cap IQ earlier if possible. The q3 results came out at an awkward time so I had to re-run things in a brief time window. 
 
 ## Folder map
 
