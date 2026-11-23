@@ -1,49 +1,50 @@
-# AI workflow: SPGI pitch (CNID Investment Challenge 2026)
+# AI workflow
 
-> Outline for me to write in my own words. The notes under each heading are reminders; delete them when writing.
+I used Claude Code as a research partner through the CNID final round, from Q3 results on Oct 27 to pitch day on Nov 13, 2026. The recommendation and every assumption are mine. The AI gathered facts, ran the math, checked numbers and argued the other side.
 
-## What this is
+## Why give the AI a structure
 
-- One paragraph: the pitch (BUY SPGI), the competition, and the role AI played (research, stress-testing, valuation checks). The recommendation and judgement are mine.
-
-## Why structure an AI workflow at all
-
-- Without structure, AI drifts: numbers change between chats, sources get mixed up, and criticism gets softened.
-- The goal is AI as a sparring partner and research assistant, with a clear record of what it changed.
+Without one, numbers drift between chats, sources get mixed up and criticism gets softened. I wanted a sparring partner, with a record of everything it changed.
 
 ## Design choices
 
-- **Context file (`context/CLAUDE.md`):** every session starts with the same rules: scorecard, data standards, GAAP vs adjusted, the CME minority stake.
-- **Written philosophy (`../philosophy.md`):** stress tests check against my principles, not generic ones.
-- **One source of truth per kind of content:** numbers only in the model, the argument only in the thesis, decisions only in the log.
-- **Build and attack in separate sessions:** one stress test per session, so the AI doesn't defend its own work.
-- **Verify against primary sources:** secondary coverage is treated as a lead, not a fact (see the errors table in `decision-log.md`).
-- **Licensed material stays private:** the provided sell-side research and models shaped the framework but aren't reproduced here.
+- **One context file.** Every session starts from [`context/CLAUDE.md`](context/CLAUDE.md): the scorecard, GAAP vs adjusted, CME's 27% of S&P Dow Jones Indices, and how we work together (the AI asks before building and challenges me with evidence).
+- **My philosophy as the yardstick.** Stress tests are checked against [`../philosophy.md`](../philosophy.md), not generic principles.
+- **One home per kind of content.** Numbers live in the model, the argument in the thesis, decisions in [`decision-log.md`](decision-log.md).
+- **Four agents** ([`agents/`](agents/)): a researcher, a modeler, a checker and a challenger. The checker re-derives each number from the sources without seeing the modeler's work. The challenger runs in its own task, so it isn't defending work it built.
+- **Licensed material stays private.** I had access to provided sell-side research and models. They shaped the framework, but none of it is in this repo.
 
 ## The process
 
-- Link to `context/workflow.md`: framework → Q3 refresh → thesis → stress tests → deck → Q&A.
+Framework from the provided research → Q3 refresh → thesis → stress tests → deck → rehearsals and Q&A. Each stage is in [`context/workflow.md`](context/workflow.md).
 
 ## What the AI changed
 
-- The 3–5 best entries from `decision-log.md` and `stress-tests/`, one sentence each.
+- **Oct 30:** flagged that pre-spin Street EPS (~$19.5) can't be compared with post-spin guidance ($17.70–17.95), so every comparison moved to a post-spin basis.
+- **Nov 1:** re-ran the reverse DCF at the post-Q3 price. The "market prices in only ~6% growth" claim was retired.
+- **Nov 2:** the checker found that my Round 1 reverse DCF mixed bases on CME's stake. On a consistent basis, implied growth is about 8.4%, not 6%.
+- **Nov 9–11:** after mentor feedback to show where I differ from consensus, the base case moved onto Street numbers, with my catalysts shown separately.
 
 ## Where the AI was wrong
 
-- The best examples from the errors table: what was claimed, what was true, how I caught it.
+- Secondary coverage said S&P "plans to spin off" Capital IQ. The 8-K only announced a strategic review that includes a possible separation.
+- The AI said SPGI's P/E discount to Moody's and MSCI had "mostly closed". Peers re-rated too, and a ~15% discount remained.
+- The AI treated FCF "after CME's payouts" as an adjustment to make. Reported FCF is already after those distributions (Q3 2026 exhibits, p.18).
+- Model agents read stale cached values from the Excel workbook. The checker caught it by re-deriving from the live formulas.
 
-## What stayed human
-
-- The recommendation, the philosophy, the final model numbers, what goes in front of judges.
+The full record is in [`decision-log.md`](decision-log.md).
 
 ## Lessons
 
-- What I'd do differently; what worked better than expected.
+- The independent checker earned its place: it caught the reverse DCF basis error and the stale workbook values, both of which I'd missed.
+- Next time I'd settle the agents' roles and the structure of their Markdown files on day one, and build a dashboard that shows the model, the thesis and the open questions in one place as the work moves.
 
 ## Folder map
 
 | Path | What |
 |---|---|
-| `context/` | Files the AI loads: project rules and process (philosophy is at `../philosophy.md`) |
-| `stress-tests/` | One file per stress test (`_template.md` to start) |
+| `context/` | The project rules and process every session loads |
+| `agents/` | The four agent definitions |
+| `skills/editorial-charts/` | My chart style |
+| `stress-tests/` | Template for one stress test per session |
 | `decision-log.md` | Every challenge, correction and outcome |

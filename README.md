@@ -12,7 +12,7 @@ I recommend a Buy with a 12-month target of $540, about 15% above the Nov 6, 202
 2. A multi-year debt issuance cycle. About $11 trillion of rated debt matures by 2030, and the AI spenders keep borrowing to fund their capex.
 3. The Capital IQ review. S&P is reviewing a sale or separation of Capital IQ, about 6% of revenue. This provides optionality to management where in both cases S&P Global can benefit. A sale leaves a business that is nearly all benchmarks (higher quality).
 
-The return is asymmetric: about 13.5% a year implied on consensus Street numbers, still about 7% if the P/E falls to a near 10-yr-low 20x, and about 19% if a few catalysts play out and the P/E returns to its 27x 10-year average (deck slides 14–15).
+The return is asymmetric: about 13.5% a year implied on consensus Street numbers, still about 7% if the P/E falls to a depressed 20x, and about 19% if a few catalysts play out and the P/E returns to its 27x 10-year average (deck slides 14–15).
 
 ## How S&P makes money
 
@@ -33,6 +33,8 @@ Revenue through nine months of 2026 was $11.1B, up 9.5%, at a 53.6% adjusted mar
 
 **Industry.** Ratings is close to a three-player market. S&P, Moody's and Fitch hold 93% of ratings outstanding, and S&P is the largest at 49.6% (SEC, 2024). In Indices, the fee per dollar of ETF assets fell from 4.1 to 2.5 bp between 2019 and 2025, but asset-linked fees still doubled because indexed assets grew faster.
 
+<img src="output/figures/3_moat.png" alt="S&P holds about half of all credit ratings outstanding" width="480">
+
 **Moat.** Issuers pay for a rating because investors won't buy unrated debt. When people buy an S&P 500 ETF, S&P gets part of the fee. Oil, gas and power contracts settle on Platts prices. Costs are mostly fixed, so in 9M 2026 S&P kept about 66 cents of every extra revenue dollar as profit. How I judge moats is in [`philosophy.md`](philosophy.md).
 
 **AI exposure.** The AI risk sits in Market Intelligence: software and data seats, about 23% of profit. The 2026 SaaS sell-off de-rated the whole company anyway. If S&P sells Capital IQ, what's left is mostly benchmarks. If it keeps it, MI is still growing 7% with margins rising. Sell it or keep it, both work.
@@ -40,6 +42,8 @@ Revenue through nine months of 2026 was $11.1B, up 9.5%, at a 53.6% adjusted mar
 ## The quantitative case
 
 **Catalysts.** About $11T of rated debt matures by the end of 2030. Six AI spenders have issued $302B of bonds in 2026, up from $114B in 2025, and the five largest are expected to spend $1.1T on capex in 2027. Private credit reached $4.1T, and S&P's private-markets ratings revenue grew 60% in Q2 (deck slides 9–10).
+
+<img src="output/figures/1_debt_cycle.png" alt="A maturity wall and a wave of AI borrowing" width="480"> <img src="output/figures/2_private_credit.png" alt="Private credit ratings are growing faster than the market" width="480">
 
 **Growth.** On Street numbers, EPS grows 12.2% a year to 2029: 7.1 points from revenue, 1.7 from margins and 3.4 from buybacks. That's 13.0% with the dividend, and about 14% with my catalysts (slide 11).
 
@@ -107,6 +111,7 @@ python src/reverse_dcf.py      # FCF growth the Nov 6 price implies, + sensitivi
 | `philosophy.md` | How I invest, applied to SPGI |
 | `src/` | Data fetch and reverse DCF |
 | `data/` | Public SEC data pulled by the scripts |
+| `output/figures/` | Charts used in this README |
 | `ai_workflow/` | AI workflow design, stress tests, decision log |
 
 ## Note on sources
